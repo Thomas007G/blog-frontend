@@ -1,0 +1,22 @@
+:root {
+  --bg: #efefef;
+  --bg-accent: #565656;
+  --text-color: #343434;
+  --anim-speed: 300ms;
+  --root-size: 16px;
+  @media screen and (max-width: 600px) {
+    --root-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+}
+
+Nav {
+  background: var(--bg-accent);
+  width: 100%;
+  height: calc(var(--root-size) * 5);
+}
