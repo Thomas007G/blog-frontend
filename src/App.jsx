@@ -1,15 +1,17 @@
 import React from "react";
 import { Nav, NavItem } from "./components/nav/Nav";
 
-import { ReactComponent as Logo } from "./logo512.png";
+import { ReactComponent as Logo } from "./icons/arrow.svg";
 // import "./App.css";
 
-function App() {
-  return (
-    <Nav>
-      <NavItem icon={<Logo></Logo>} />
-    </Nav>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Nav>
+        <NavItem icon={<Logo />} />
+      </Nav>
+    );
+  }
 }
 
 export default App;
