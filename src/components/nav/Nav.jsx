@@ -1,24 +1,23 @@
 import React from "react";
 import "./Nav.css";
-import { render } from "@testing-library/react";
 
-class NavItem extends React.Component(props) {
+class NavItem extends React.Component {
   render() {
     return (
       <li>
-        <a href="#" className="nav-item">
-          {props.icon}
+        <a href="/" className="nav-item">
+          {this.props.icon}
         </a>
       </li>
     );
   }
 }
 
-class Nav extends React.Component(props) {
+class Nav extends React.Component {
   render() {
     return (
       <nav>
-        <ul>{props.children}</ul>
+        <ul>{this.props.children}</ul>
       </nav>
     );
   }
