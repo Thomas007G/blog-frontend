@@ -1,17 +1,17 @@
-import { React } from "react";
+import React from "react";
 
 import "./Post.css";
 
-class Blog extends React.Component {
+class Post extends React.Component {
   render() {
     return (
-      <a href={this.props.link}>
-        <div>
-          <h1>{this.props.title}/</h1>
-          <p>{this.props.blurb}</p>
+      <a href={this.props.data.link}>
+        <div className="post">
+          <h1>{this.props.data.title}/</h1>
+          <p>{this.props.data.blurb}</p>
           <small>
-            <a href={this.props.author.link}>{this.props.author.name}</a>,{" "}
-            {this.props.date}
+            <a href={this.props.data.author}>{this.props.data.author}</a>,{" "}
+            {this.props.data.date}
           </small>
         </div>
         /
@@ -19,3 +19,5 @@ class Blog extends React.Component {
     );
   }
 }
+
+export default Post;

@@ -16,7 +16,7 @@
   font-size: var(--root-size);
 }
 
-div {
+.post {
   margin: auto;
   padding: 1rem;
   border: 0.1rem solid black;
