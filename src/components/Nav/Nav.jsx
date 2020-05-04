@@ -27,28 +27,24 @@ const Anchor = styled.a`
   margin: 0.2rem;
 `
 
-class NavItem extends React.Component {
-  render() {
+function NavItem(props) {
     return (
       <ListItem>
         <Anchor href="/" className="nav-item">
-          {this.props.icon}
+          {props.icon}
         </Anchor>
       </ListItem>
     );
-  }
 }
 
 
 
-class Nav extends React.Component {
-  render() {
+function Nav(props) {
     return (
       <nav>
-        <ul>{this.props.children}</ul>
+        <ul>{props.children}</ul>
       </nav>
     );
-  }
 }
 
 export { Nav, NavItem };
