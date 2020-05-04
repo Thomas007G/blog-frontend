@@ -14,9 +14,3 @@ body {
   padding: 0;
   background: var(--bg);
 }
-
-Nav {
-  background: var(--bg-accent);
-  width: 100%;
-  height: calc(var(--root-size) * 5);
-}

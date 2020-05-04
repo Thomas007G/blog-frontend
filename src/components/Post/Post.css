@@ -1,0 +1,41 @@
+:root {
+  --bg: #efefef;
+  --bg-accent: #565656;
+  --text-color: #343434;
+  --active-color: #0394fc;
+  --anim-speed: 300ms;
+  --root-size: 16px;
+  @media screen and (max-width: 600px) {
+    --root-size: 12px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: var(--root-size);
+}
+
+.post {
+  margin: auto;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+
+div:hover {
+  border-color: var(--active-color);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+small {
+  font-size: 0.6em;
+  opacity: 0.8;
+}
